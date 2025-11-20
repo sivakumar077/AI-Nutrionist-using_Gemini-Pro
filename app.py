@@ -35,7 +35,7 @@ def input_image_setup(uploaded_file):
     
 ##initialize our streamlit app
 
-st.set_page_config(page_title="Personalized AI Calorie Counting App")
+st.set_page_config(page_title="Personalized AI Calorie Count App")
 
 st.header("Personalized AI Calorie Counter App")
 input=st.text_input("Input Prompt: ",key="input")
@@ -68,5 +68,6 @@ if submit:
     response=get_gemini_repsonse(input_prompt,image_data,input)
     st.subheader("The Response is")
     st.write(response)
+
 
 
